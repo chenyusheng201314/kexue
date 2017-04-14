@@ -32,6 +32,25 @@ $(function () {
         }
     });
 
+    //点击显示地图
+    $('.map').on('click',function(){
+       $('.map2').fadeIn();
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(118.786457, 32.029556);
+        map.centerAndZoom(point, 15);
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);               // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    });
+    //地图消失
+    $('.map2-round').on('click',function(){
+        $('.map2').fadeOut();
+    });
+
+
+
+
 
 
     //pc端  置顶
@@ -42,6 +61,8 @@ $(function () {
     $('.shouji-back').on('click',function () {
         $('body').stop(true).animate({'scrollTop':0});
     });
+
+
 
     $('.nav').eq(0).on('click',function () {
             $('body').stop(true).animate({'scrollTop':0});
@@ -131,4 +152,7 @@ $(function () {
         }
 
     })
+
+
+
 });

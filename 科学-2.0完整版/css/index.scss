@@ -7,6 +7,11 @@
   url('//at.alicdn.com/t/font_069gbeg7ytlnmi.ttf') format('truetype'),
   url('//at.alicdn.com/t/font_069gbeg7ytlnmi.svg#iconfont') format('svg');
 }
+
+#allmap{
+  height: 100%;
+  width: 100%;
+}
 body{
   background: url("../image/bg.jpg") no-repeat fixed;
   background-size: cover;
@@ -21,7 +26,7 @@ body{
   width: 100%;
   height: 100%;
   display: none;
-  background: blue;
+  background: rgba(0,0,0,0.5);
   position: fixed;
   left: 0;
   top: 0;
@@ -38,6 +43,11 @@ body{
     text-align: center;
     line-height: 20px;
     cursor: pointer;
+  }
+  .map3{
+    width: 90%;
+    height: 90%;
+    margin: 5% auto;
   }
 }
 
