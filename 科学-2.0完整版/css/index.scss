@@ -1,0 +1,729 @@
+@import "public.css";
+@font-face {
+  font-family: 'iconfont';  /* project id 272999 */
+  src: url('//at.alicdn.com/t/font_069gbeg7ytlnmi.eot');
+  src: url('//at.alicdn.com/t/font_069gbeg7ytlnmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_069gbeg7ytlnmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_069gbeg7ytlnmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_069gbeg7ytlnmi.svg#iconfont') format('svg');
+}
+body{
+  background: url("../image/bg.jpg") no-repeat fixed;
+  background-size: cover;
+  .body{
+    width: 100%;
+    height: auto;
+    background: rgba(58,95,128,0.35);
+  }
+}
+
+.top{
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  .logo,.top-title{
+    float: left;
+  }
+  .logo{
+    font-family: 'iconfont';
+    height: 80px;
+    width: auto;
+    font-size: 60px;
+    line-height: 80px;
+    margin-left: 5%;
+    color: #015cbb;
+  }
+  .top-title{
+    height: 80px;
+    width: auto;
+    font-size: 25px;
+    color: #00315c;
+    line-height: 80px;
+    margin-left: 4%;
+  }
+  .navs{
+    height: 80px;
+    width: auto;
+    line-height: 80px;
+    color: #20588e;
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+    .nav{
+      margin-right: 20px;
+      width: auto;
+      height: 100%;
+      float: left;
+      cursor: pointer;
+      &:hover{
+        color: #41b7c4;
+      }
+    }
+  }
+  .mun{
+    width: 20%;
+    height: 100%;
+    font-family: 'iconfont';
+    float: right;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    display: none;
+  }
+  .shouji-navs{
+    display: none;
+    .shouji-nav{
+      display: none;
+    }
+  }
+}
+
+.banner{
+  width: 100%;
+  height: 807px;
+  background: rgba(0,38,78,0.5);
+  overflow: hidden;
+  h1{
+    color: #fff;
+    font-size: 45px;
+    margin-top: 25%;
+    margin-left: 15%;
+    display: none;
+  }
+  p{
+    margin-left: 15%;
+    color: #fff;
+    display: none;
+  }
+  .p1{
+    font-size: 45px;
+  }
+  .p2{
+    font-size: 20px;
+  }
+  .p3{
+    margin-top: 40px;
+  }
+}
+
+//xue shu fen xi
+.analyze{
+  height: 634px;
+  width: 100%;
+  overflow: hidden;
+  .analyze-left{
+    width: 40%;
+    height: 634px;
+    background: #eaf4f6;
+    float: left;
+    h2{
+      font-size: 40px;
+      margin-left: 26%;
+      margin-top: 15%;
+      color: #00335e;
+      display: none;
+    }
+    p{
+      font-size: 40px;
+      margin-left: 26%;
+      color: #00335e;
+      display: none;
+    }
+  }
+  .analyze-right{
+    width: 60%;
+    height: 634px;
+    background: #fff;
+    float: right;
+    ul{
+      padding-left: 15%;
+      li{
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+        list-style-type: square;
+        color: #41b7c4;
+        display: none;
+        .analyze-right-tit.tit1{
+          margin-top: 60px;
+        }
+        .analyze-right-tit{
+          color: #002f5a;
+          font-size: 18px;
+          margin-top: 40px;
+          span{
+            width: 40px;
+            height: 40px;
+            display: block;
+            background: #2b6ca3;
+            float: right;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 14px;
+            margin-right: 60%;
+            margin-top: -5px;
+            &:hover{
+              background: #00335e;
+            }
+            a{
+              color: #fff;
+            }
+          }
+        }
+        .analyze-right-con{
+          font-size: 14px;
+          color: #1f588d;
+          margin-top: 28px;
+        }
+      }
+    }
+
+  }
+}
+
+//xue ke fu wu
+.sever{
+  height: 810px;
+  width: 100%;
+  background: #00305b;
+  overflow: hidden;
+  h2{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 90px;
+    margin-left: 45%;
+    height: 52px;
+    display: none;
+  }
+  .sever-con{
+    width: 900px;
+    height: 555px;
+    background: #fff;
+    margin: 38px auto 0 auto;
+    overflow: hidden;
+    li{
+      width: 80%;
+      height: auto;
+      font-size: 20px;
+      list-style-type: square;
+      color: #41b7c4;
+      margin: 20px auto 0 auto;
+      display: none;
+      .sever-con-tit{
+        color: #002f5a;
+        font-size: 18px;
+        margin-top: 55px;
+        span{
+          width: 40px;
+          height: 40px;
+          display: block;
+          background: #2b6ca3;
+          float: right;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 25px;
+          color: #fff;
+          font-size: 14px;
+          margin-right: 70%;
+          &:hover{
+            background: #00335e;
+          }
+          a{
+            color: #fff;
+          }
+        }
+      }
+      .sever-con-con{
+        font-size: 14px;
+        color: #1f588d;
+        margin-top: 28px;
+      }
+    }
+  }
+}
+
+.blank{
+  height: 411px;
+  width: 100%;
+  background: rgba(0,38,78,0.5);
+}
+
+//xue ke zi yuan
+.resources{
+  height: 800px;
+  width: 100%;
+  .resources-left{
+    width: 20%;
+    height: 800px;
+    background: #eaf4f6;
+    float: left;
+  }
+  .resources-right{
+    width: 80%;
+    height: 800px;
+    background: #bdd9ef;
+    float: right;
+    .resources-right-con{
+      width: calc(100% - 2px);
+      height: 800px;
+      float: right;
+      background: #eaf4f6;
+      h2{
+        font-size: 40px;
+        color: #001a4a;
+        margin-top: 130px;
+        margin-left: 30%;
+        display: none;
+      }
+      .resources-right-con-Database{
+        width: 85%;
+        height: auto;
+        margin-top: 55px;
+        .round{
+          width: 47px;
+          height: 47px;
+          font-size: 20px;
+          border-radius: 25px;
+          background: #276ca4;
+          margin-left: -24px;
+          text-align: center;
+          line-height: 47px;
+          cursor: pointer;
+          float: left;
+          &:hover{
+            font-size: 23px;
+          }
+          span{
+            font-family: 'iconfont';
+            color: #fff;
+          }
+        }
+        .tit{
+          height: auto;
+          width: 17%;
+          font-size: 18px;
+          margin-left: 6%;
+          float: left;
+          text-align: center;
+          display: none;
+          .tit-top{
+            color: #1a456b;
+          }
+          .tit-bottom{
+            color: #2873b8;
+          }
+        }
+        .con{
+          height: auto;
+          width: auto;
+          margin-left: 33%;
+          font-size: 14px;
+          color: #15436a;
+        }
+      }
+    }
+  }
+}
+
+//lian xi wo  men
+.contact{
+  width: 100%;
+  height: 725px;
+  background: url("../image/bg2.jpg") no-repeat;
+  background-size: cover;
+  .contact-left{
+    width: 40%;
+    height: 725px;
+    background: rgba(5,54,98,0.8);
+    color: #fff;
+    overflow: hidden;
+    float: left;
+    .contact-h2{
+      width: 100%;
+      font-size: 37px;
+      margin-left: 23%;
+      margin-top: 136px;
+      display: none;
+    }
+    .contact-p{
+      width: 100%;
+      font-size: 40px;
+      margin-left: 23%;
+      display: none;
+    }
+  }
+    .contact-right{
+      width: 60%;
+      height: 725px;
+      float: right;
+      background: rgba(34,96,151,0.8);
+      color: #fff;
+      overflow: hidden;
+      p{
+        margin-left: 18%;
+      }
+      .contact-right-tit{
+        font-size: 20px;
+        margin-top: 136px;
+        display: none;
+      }
+      .contact-right-con,.connection{
+        font-size: 16px;
+        margin-top: 30px;
+        display: none;
+      }
+      .connection{
+        color: #99dadd;
+        a{
+          color: #99dadd;
+          text-decoration: underline;
+        }
+      }
+      .botall{
+        margin-left: 18%;
+        margin-top: 290px;
+        .bot{
+          height: 23px;
+          width: 23px;
+          float: left;
+          margin: 5px;
+        }
+      }
+
+    }
+  }
+
+.return{
+  height: 80px;
+  width: 100%;
+  background: #00305b;
+  overflow: hidden;
+  .con{
+    width: 21px;
+    height: 11px;
+    margin: 10px auto 5px auto;
+  }
+  p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.copyright{
+  height: 107px;
+  width: 100%;
+  background: rgba(58,95,128,0.35);
+  text-align: center;
+  overflow: hidden;
+  p{
+    color: #0f508b;
+    font-size: 14px;
+    margin: 45px;
+  }
+}
+
+@media screen and ( max-width: 970px){
+  .top{
+    height: 40px;
+    line-height: 40px;
+    .logo{
+      width: 10%;
+      height: 100%;
+      font-size: 3.0rem;
+      text-align: center;
+      line-height: 40px;
+      color: #015cbb;
+    }
+    .top-title{
+      width: 40%;
+      height: 100%;
+      font-size: 1.4rem;
+      line-height: 40px;
+    }
+    .navs{
+      display: none;
+    }
+    .mun{
+      width: 20%;
+      height: 100%;
+      font-family: 'iconfont';
+      float: right;
+      line-height: 40px;
+      text-align: center;
+      font-size: 2.0rem;
+      display: block;
+      cursor: pointer;
+    }
+    .shouji-navs{
+      width: 40%;
+      height: auto;
+      color: #fff;
+      position: fixed;
+      right: 0;
+      top: 40px;
+      display: none;
+      cursor: pointer;
+      .shouji-nav{
+        text-align: center;
+        display: block;
+        padding-left: 10%;
+        height: 30px;
+        font-size: 1.4rem;
+        line-height: 30px;
+        border: 1px solid #666;
+        background: #00305b;
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .banner{
+    height: 410px;
+    h1{
+      font-size: 2rem;
+      display: block;
+    }
+    p{
+      display: block;
+    }
+    .p1{
+      font-size: 2rem;
+    }
+    .p2{
+      font-size: 1.2rem;
+    }
+    .p3{
+      margin-top: 20px;
+    }
+  }
+
+  .analyze{
+    width: 100%;
+    height: auto;
+    .analyze-left{
+      width: 100%;
+      height: 80px;
+      float: none;
+      overflow: hidden;
+      text-align: center;
+      h2{
+        font-size: 2rem;
+        margin-left: 0;
+        margin-top: 12px;
+        display: block;
+      }
+      p{
+        font-size: 1.5rem;
+        margin-left: 0;
+        display: block;
+      }
+    }
+    .analyze-right{
+      width: 100%;
+      height: auto;
+      float: none;
+      overflow: hidden;
+      ul{
+        padding: 0;
+        margin-bottom: 20px;
+        li{
+          width: 80%;
+          height: auto;
+          font-size: 1.5rem;
+          margin: 0 auto;
+          display: block;
+          .analyze-right-tit.tit1{
+            margin-top: 10px;
+          }
+          .analyze-right-tit{
+            font-size: 1.5rem;
+            margin-top: 20px;
+            span{
+              width: 25px;
+              height: 25px;
+              border-radius: 15px;
+              font-size: 1.2rem;
+              line-height: 25px;
+              margin-right: 52%;
+              a{
+                color: #fff;
+              }
+            }
+          }
+          .analyze-right-con{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .sever{
+    height: auto;
+    h2{
+      font-size: 2rem;
+      margin-top: 45px;
+      display: block;
+    }
+    .sever-con{
+      width: 85%;
+      height: auto;
+      margin-top: 19px;
+      margin-bottom: 64px;
+      ul{
+        margin-bottom: 30px;
+        li{
+          font-size: 1.5rem;
+          display: block;
+          .sever-con-tit{
+            font-size: 1.5rem;
+            margin-top: 30px;
+            span{
+              width: 25px;
+              height: 25px;
+              border-radius: 15px;
+              font-size: 1.2rem;
+              line-height: 25px;
+              margin-right: 52%;
+            }
+          }
+          .sever-con-con{
+            font-size: 1.2rem;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .blank{
+    height: 355px;
+  }
+
+  .resources{
+    height: auto;
+    width: 100%;
+    .resources-left{
+      width: 0;
+    }
+    .resources-right{
+      width: 100%;
+      height: auto;
+      .resources-right-con{
+        width: 100%;
+        height: auto;
+        h2{
+          font-size: 2rem;
+          color: #001a4a;
+          margin-top: 70px;
+          margin-left: 45%;
+          display: block;
+        }
+        .resources-right-con-Database{
+          width: 90%;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          .round{
+            display: none;
+            span{
+              font-family: 'iconfont';
+              color: #fff;
+            }
+          }
+          .tit{
+            height: auto;
+            width: 100%;
+            font-size: 1.4rem;
+            float: none;
+            text-align: center;
+            .tit-top{
+              color: #1a456b;
+            }
+            .tit-bottom{
+              color: #2873b8;
+            }
+          }
+          .con{
+            height: auto;
+            width: 100%;
+            margin: 10px 5%;
+            font-size: 1.2rem;
+            color: #15436a;
+          }
+        }
+      }
+    }
+  }
+
+  .contact{
+    height: auto;
+    .contact-left{
+      height: 360px;
+      .contact-h2{
+        font-size: 1.9rem;
+        margin-left: 18%;
+        margin-top: 68px;
+        display: block;
+      }
+      .contact-p{
+        font-size: 1.9rem;
+        margin-left: 18%;
+        display: block;
+      }
+    }
+    .contact-right{
+      height: 360px;
+      p{
+        margin-left: 11%;
+      }
+      .contact-right-tit{
+        font-size: 20px;
+        margin-top: 68px;
+        display: block;
+      }
+      .contact-right-con,.connection{
+        font-size: 1.4rem;
+        margin-top: 15px;
+        display: block;
+      }
+      .connection{
+        color: #99dadd;
+        a{
+          color: #99dadd;
+          text-decoration: underline;
+        }
+      }
+      .botall{
+        margin-left: 11%;
+        margin-top: 60px;
+        .bot{
+          height: 23px;
+          width: 23px;
+          float: left;
+          margin: 5px;
+        }
+      }
+
+    }
+  }
+
+  .return{
+    height: 60px;
+    .con{
+      margin: 9px auto 4px auto;
+    }
+    p{
+      font-size: 1.6rem;
+    }
+  }
+
+}
